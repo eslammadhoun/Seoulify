@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+}
+
+:root {
+    --main-color: #32353C;
+}
+
+.header {
+    width: 100%;
+    height: 1080px;
+    background-color: gray;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.452);
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    z-index: 1;
+}
+
+.navbar .leftsec, .navbar .left-nav, .navbar .right-nav, .navbar .logo{
+    display: inline-block;
+}
+
+.navbar .leftsec{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .left-nav {
+    margin-left: 180px;
+}
+
+.navbar .right-nav{
+    margin-left: 180px;
+}
+
+.navbar .leftsec .select-lang {
+    width: 100px;
+    height: 30px;
+    border: 0;
+    background-color: #F0F0F0;
+}
+
+.navbar .leftsec img{
+    margin-left: 50px;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.navbar .left-nav ul li,  .navbar .right-nav ul li{
+    font-size: 22px;
+    padding: 14px 20px;
+}
+
+.navbar .logo {
+    margin-left: 130px;
+}
+
+.navbar .left-nav ul li a span {
+    position: absolute;
+    font-size: 15px;
+    top: 33px;
+}
+
+.navbar .right-nav ul li a span {
+    position: absolute;
+    font-size: 15px;
+    top: 33px;
+}
+
+.navbar .rightsec { 
+    display: flex;
+    align-items: center;
+    margin-left: 180px;
+}
+
+.navbar .rightsec img {
+    position: absolute;
+    right: 212.11px;
+}
+
+.navbar .rightsec .bag-circle {
+    background-color: #F0F0F0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .rightsec .bag-circle img {
+    position: absolute;
+    right: 11px;
+    top: 9px;
+}
+
+.navbar .rightsec .second-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #B79B6C;
+    border-radius: 100%;
+    position: absolute;
+    top: -7px;
+    right: -3px;
+}
+
+.navbar .rightsec .second-circle p {
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+.section-1 .rightsec img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
