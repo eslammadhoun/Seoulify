@@ -137,3 +137,25 @@ ul li a {
     right: 0;
     top: 0;
 }
+
+.section-1 .rightsec .content {
+    position: relative;
+}
+
+.section-1 .rightsec .content .play-btn .bg {
+    width: 130px;
+    height: 130px;
+    background-color: #F0F0F0;
+    opacity: 20%;
+}
+
+.section-1 .rightsec .content .play-btn .bg .btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #F0F0F0;
+    position: absolute;
+    right: 480px;
+    margin-right: -50px;
+    top: 400px;
+}
