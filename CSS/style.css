@@ -1,13 +1,17 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: Arial, sans-serif;
 }
 
 :root {
     --main-color: #32353C;
+    --accent-color: #B79B6C;
+    --background-color: rgba(255, 255, 255, 0.452);
 }
 
 .header {
@@ -18,138 +22,152 @@ body {
 
 .navbar {
     position: fixed;
+    top: 0;
+    z-index: 1;
     width: 100%;
     height: 100px;
-    background-color: rgba(255, 255, 255, 0.452);
+    background-color: var(--background-color);
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 2%;
     color: var(--main-color);
-    z-index: 1;
 }
 
-.navbar .leftsec, .navbar .left-nav, .navbar .right-nav, .navbar .logo{
-    display: inline-block;
-}
-
-.navbar .leftsec{
-    margin-left: 20px;
+/* Left section */
+.leftsec {
     display: flex;
     align-items: center;
+    flex: 1;
 }
 
-.navbar .left-nav {
-    margin-left: 180px;
-}
-
-.navbar .right-nav{
-    margin-left: 180px;
-}
-
-.navbar .leftsec .select-lang {
-    width: 100px;
-    height: 30px;
+.select-lang {
+    width: 120px;
+    height: 35px;
+    margin-right: 20px;
     border: 0;
     background-color: #F0F0F0;
+    padding: 5px;
 }
 
-.navbar .leftsec img{
-    margin-left: 50px;
+.leftsec img {
+    margin-left: 10px;
+}
+
+/* Middle section (nav links) */
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
 }
 
 ul li {
-    list-style-type: none;
-    display: inline;
+    margin: 0 20px;
 }
 
 ul li a {
     text-decoration: none;
-    color: black;
+    color: var(--main-color);
+    font-size: 18px;
+    position: relative;
 }
 
-
-.navbar .left-nav ul li,  .navbar .right-nav ul li{
-    font-size: 22px;
-    padding: 14px 20px;
+ul li a:hover {
+    color: var(--accent-color);
 }
 
-.navbar .logo {
-    margin-left: 130px;
-}
-
-.navbar .left-nav ul li a span {
+ul li a span {
     position: absolute;
-    font-size: 15px;
-    top: 33px;
+    font-size: 12px;
+    top: -10px;
 }
 
-.navbar .right-nav ul li a span {
-    position: absolute;
-    font-size: 15px;
-    top: 33px;
+/* Logo section */
+.logo {
+    flex: 1;
+    text-align: center;
 }
 
-.navbar .rightsec { 
+.logo img {
+    max-height: 80px;
+}
+
+/* Right section */
+.rightsec {
     display: flex;
     align-items: center;
-    margin-left: 180px;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 20px;
 }
 
-.navbar .rightsec img {
-    position: absolute;
-    right: 212.11px;
+.rightsec img {
+    height: 30px;
 }
 
-.navbar .rightsec .bag-circle {
+.rightsec h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--main-color);
+}
+
+.bag-circle {
     background-color: #F0F0F0;
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    position: absolute;
-    right: 30px;
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bag-circle img {
+    width: 25px;
+}
+
+.second-circle {
+    width: 20px;
+    height: 20px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.navbar .rightsec .bag-circle img {
-    position: absolute;
-    right: 11px;
-    top: 9px;
-}
-
-.navbar .rightsec .second-circle {
-    width: 20px;
-    height: 20px;
-    background-color: #B79B6C;
-    border-radius: 100%;
-    position: absolute;
-    top: -7px;
-    right: -3px;
-}
-
-.navbar .rightsec .second-circle p {
+.second-circle p {
     color: white;
-    text-align: center;
-    padding: 1px;
+    font-size: 12px;
+    margin: 0;
 }
 
-.section-1 .rightsec img {
+.section-1 .section-1-right {
     position: absolute;
     right: 0;
-    top: 0;
 }
 
-.section-1 .rightsec .content {
+.section-1 .section-1-right .content {
     position: relative;
 }
 
-.section-1 .rightsec .content .play-btn .bg {
+.section-1 .section-1-right .content .play-btn .bg {
     width: 130px;
     height: 130px;
     background-color: #F0F0F0;
     opacity: 20%;
 }
 
-.section-1 .rightsec .content .play-btn .bg .btn {
+.section-1 .section-1-right .content .play-btn .bg .btn {
     width: 100px;
     height: 100px;
     border-radius: 100%;
