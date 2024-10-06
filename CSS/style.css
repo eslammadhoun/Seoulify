@@ -151,29 +151,70 @@ ul li a span {
     margin: 0;
 }
 
+.section-1 {
+    display: flex;
+}
+
+.section-1 .section-1-left {
+    width: 50%;
+    height: 911px;
+    background-color: gray;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .section-1 .section-1-right {
-    position: absolute;
-    right: 0;
+    width: 50%;
+    height: 1080px;
+    position: relative;
+}
+.section-1 .section-1-right img {
+    width: 100%;
+    height: 910px;
 }
 
 .section-1 .section-1-right .content {
-    position: relative;
+    position: absolute; /* اجعل المحتوى مطلقًا */
+    top: 50%; /* اجعل المحتوى في منتصف الصفحة */
+    left: 50%; /* اجعل المحتوى في منتصف الصفحة */
+    transform: translate(-50%, -50%); /* استخدم التحويل لجعل المركز دقيقًا */
+    display: flex;
+    justify-content: center;
 }
 
-.section-1 .section-1-right .content .play-btn .bg {
-    width: 130px;
-    height: 130px;
-    background-color: #F0F0F0;
-    opacity: 20%;
+.section-1 .section-1-right .bg {
+    background-color: rgba(255, 255, 255, 0.205);
+    opacity: 20;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, -80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 65px;
 }
 
-.section-1 .section-1-right .content .play-btn .bg .btn {
+
+.section-1 .section-1-right .btn {
+    background-color: white;
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    background-color: #F0F0F0;
     position: absolute;
-    right: 480px;
-    margin-right: -50px;
-    top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .section-1-right .btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.section-1 .section-1-right .content h1 {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
 }
