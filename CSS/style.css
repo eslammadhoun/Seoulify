@@ -846,3 +846,90 @@ a {
     height: 400px;
     background-image: url(../images/section-6-bg-5.png);
 }
+
+.section-6 .card-1,.section-6 .card-2,.section-6 .card-3,.section-6 .card-4,.section-6 .card-5 {
+    display: flex;
+    align-items: center;
+}
+
+.section-6 .card-1 .card-desc {
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.section-6 .card-1 .card-desc h3 {
+    color: white;
+}
+
+.section-6 .card-1 .card-desc h3:nth-of-type(2) {
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    text-shadow: 1px 1px 10px #000000;
+}
+
+.section-6 .card-1 .card-desc button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.section-6 .card-2 .card-desc {
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.section-6 .card-2 .card-desc h3 {
+    color: white;
+}
+
+.section-6 .card-2 .card-desc h3:nth-of-type(2) {
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.section-6 .card-2 .card-desc button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.section-6 .card-3 .card-desc {
+    padding: 20px 0 0 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.section-6 .card-3 .card-desc h3 {
+    color: white;
+}
+
+.section-6 .card-3 .card-desc h3:nth-of-type(2) {
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.section-6 .card-3 .card-desc button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
