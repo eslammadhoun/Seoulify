@@ -877,7 +877,7 @@ a {
     color: white;
     font-size: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .section-6 .card-2 .card-desc {
@@ -904,7 +904,7 @@ a {
     color: white;
     font-size: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .section-6 .card-3 .card-desc {
@@ -931,5 +931,240 @@ a {
     color: white;
     font-size: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
+}
+
+.section-6 .card-4 .card-desc {
+    padding: 20px 0 0 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.section-6 .card-4 .card-desc h3 {
+    color: white;
+}
+
+.section-6 .card-4 .card-desc h3:nth-of-type(2) {
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.section-6 .card-4 .card-desc button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.section-6 .card-5 .card-desc {
+    padding: 20px 0 0 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.section-6 .card-5 .card-desc h3 {
+    color: white;
+}
+
+.section-6 .card-5 .card-desc h3:nth-of-type(2) {
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.section-6 .card-5 .card-desc button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.section-7 {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.section-7 .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.section-7 .cards div {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-7 .cards hr {
+    height: 80px;
+}
+
+.section-7 .cards div .content {
+    color: var(--main-color);
+}
+
+.section-7 .cards div .content p {
+    margin-top: -15px;
+}
+
+.section-7 .cards .card-1 {
+
+}
+
+.section-7 .cards .card-2 {
+    
+}
+.section-7 .cards .card-3 {
+    
+}
+.section-7 .cards .card-4 {
+    
+}
+
+.footer {
+    width: 100%;
+    height: 500px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.footer .links {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.footer .links div {
+    width:300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .links .contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+}
+
+.footer .links .contact-info h1 {
+    font-size: 20px;
+    color: white;
+}
+
+.footer .links .contact-info p {
+    color: #6F6F6F;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.footer .links .contact-info p:nth-of-type(2) {
+    line-height: 30px;
+}
+
+.footer .links .get-help h1{
+    color: white;
+}
+
+.footer .links .get-help p {
+    margin-top: 20px;
+    color: #6F6F6F;
+    padding-bottom: 5px;
+}
+
+.footer .links .Popular-Categories h1{
+    color: white;
+}
+
+.footer .links .Popular-Categories p {
+    margin-top: 20px;
+    color: #6F6F6F;
+    padding-bottom: 5px;
+}
+
+.footer .links .Stay-Tauch {
+    display: flex;
+    gap: 30px;
+    margin-left: -50px;
+}
+
+.footer .links .Stay-Tauch h1{
+    color: white;
+}
+
+.footer .Stay-Tauch form input {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #B7B7B7;
+}
+
+.footer .Stay-Tauch form input::placeholder {
+    padding-left: 10px;
+}
+
+.footer .Stay-Tauch form button {
+    width: 150px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    margin-left: -5px;
+    box-shadow: 1px 4px 16px #6a707e40;
+}
+
+.footer .links .Stay-Tauch p {
+    color: #6F6F6F;
+}
+
+.footer .Rights{
+    width: 100%;
+    height: 70px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+}
+
+.footer .Rights hr {
+    width: 90%;
+    color: #707070;
+    position: absolute;
+    left: 5%;
+}
+
+.footer .Rights p {
+    color: #6F6F6F;
+    margin-top: 1.5%;
+    margin-left: 5%;
+    display: inline-flex;
+}
+
+.footer .Rights p:nth-of-type(2) {
+    display: inline;
+    position: absolute;
+    right: 5%;
 }
