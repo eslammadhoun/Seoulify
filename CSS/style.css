@@ -1028,19 +1028,6 @@ a {
     margin-top: -15px;
 }
 
-.section-7 .cards .card-1 {
-
-}
-
-.section-7 .cards .card-2 {
-    
-}
-.section-7 .cards .card-3 {
-    
-}
-.section-7 .cards .card-4 {
-    
-}
 
 .footer {
     width: 100%;
@@ -1134,7 +1121,7 @@ a {
     color: white;
     border: none;
     margin-left: -5px;
-    box-shadow: 1px 4px 16px #6a707e40;
+    box-shadow: 1px 4px 16px #0000003d;
 }
 
 .footer .links .Stay-Tauch p {
